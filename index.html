@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Enigma</title>
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Bubbler+One" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="before">
+
+      <div class="up">
+        <h1>ENIGMA</h1>
+        <p>Try to find the password</p>
+      </div>
+
+
+      <div class="keys">
+        <div data-key="65" class="key">
+          <kbd>A</kbd>
+          <span class="sound">Nuke</span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>S</kbd>
+          <span class="sound">bagarre</span>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>D</kbd>
+          <span class="sound">charger</span>
+        </div>
+        <div data-key="70" class="key">
+          <kbd>F</kbd>
+          <span class="sound">couteau</span>
+        </div>
+        <div data-key="71" class="key">
+          <kbd>G</kbd>
+          <span class="sound">helicopter</span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>H</kbd>
+          <span class="sound">klaxon</span>
+        </div>
+        <div data-key="78" class="key">
+          <kbd>N</kbd>
+          <span class="sound">Alarme</span>
+        </div>
+        <div data-key="84" class="key">
+          <kbd>T</kbd>
+          <span class="sound">radio</span>
+        </div>
+        <div data-key="76" class="key">
+          <kbd>L</kbd>
+          <span class="sound">strange</span>
+        </div>
+      </div>
+
+      <audio data-key="78" src="sounds/alarme.mp3"></audio>
+      <audio data-key="83" src="sounds/bagarre.mp3"></audio>
+      <audio data-key="68" src="sounds/charger.mp3"></audio>
+      <audio data-key="70" src="sounds/couteau.mp3"></audio>
+      <audio data-key="71" src="sounds/helico.mp3"></audio>
+      <audio data-key="72" src="sounds/klaxon.mp3"></audio>
+      <audio data-key="65" src="sounds/nuke.mp3"></audio>
+      <audio data-key="84" src="sounds/radio.mp3"></audio>
+      <audio data-key="76" src="sounds/strange.mp3"></audio>
+
+      
+      <div class="clue">
+        <button id="boutton">CLUES</button>
+        <ul id="list"></ul>
+      </div>
+
+    </div>
+
+    <div id="after">
+      <h1 id='gg'>WELL DONE !</h1>
+      <div id="vdo"></div>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+
+
+  </body>
+</html>
